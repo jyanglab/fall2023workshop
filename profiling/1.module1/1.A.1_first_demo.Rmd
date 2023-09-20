@@ -23,6 +23,7 @@ f22 <- q^2 #aa
 
 # Visulize the results
 
+
 ```{r}
 plot(p, f11, type="l", col="red", lwd=3)
 lines(p, f12, type="l", col="blue", lty=2, lwd=3)
