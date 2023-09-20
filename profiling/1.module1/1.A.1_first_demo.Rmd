@@ -1,0 +1,31 @@
+---
+title: "PopGen workshop moudle 1"
+output: NUll
+author: Jinliang Yang
+date: 09-20-2023
+---
+
+Explore the relationship between genotype frq and allele frq under HWE
+
+```{r}
+# allele frq of A allele
+p = seq(from=0, to=1, by=0.01) #A
+q = 1 -p #a
+```
+
+# calcualte geno frq
+
+```{r}
+f11 <- p^2 #AA
+f12 <- 2*p*q #Aa
+f22 <- q^2 #aa
+```
+
+# Visulize the results
+
+```{r}
+plot(p, f11, type="l", col="red", lwd=3)
+lines(p, f12, type="l", col="blue", lty=2, lwd=3)
+lines(p, f22, type="l", col="purple", lty=3, lwd=3)
+```
+
